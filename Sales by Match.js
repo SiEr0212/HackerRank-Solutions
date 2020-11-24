@@ -36,3 +36,15 @@ Sample Input:
 Sample Output:
 3
 */
+const sockMerchant = (n, ar) => {
+    let myCount = [];
+    let obj = ar.reduce((colors, amount) => {
+      colors[amount] = ++colors[amount] || 1;
+      return colors;
+    }, {});
+    let count = Object.values(obj);
+    for (let pairs of count) {
+      myCount.push(Math.floor(pairs / 2));
+    }
+    return myCount.reduce((prev, curr) => prev + curr);
+  }
