@@ -52,3 +52,4 @@ const sockMerchant = (n, ar) => {
   };
 
 sockMerchant(20, [4, 5, 5, 5, 6, 6, 4, 1, 4, 4, 3, 6, 6, 3, 6, 1, 4, 5, 5, 5]);
+//returns: 9
