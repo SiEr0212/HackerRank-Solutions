@@ -36,6 +36,8 @@ Sample Input:
 Sample Output:
 3
 */
+//My solution:
+
 const sockMerchant = (n, ar) => {
     let myCount = [];
     let obj = ar.reduce((colors, amount) => {
@@ -47,4 +49,5 @@ const sockMerchant = (n, ar) => {
       myCount.push(Math.floor(pairs / 2));
     }
     return myCount.reduce((prev, curr) => prev + curr);
-  }
+  };
+
