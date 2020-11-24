@@ -39,17 +39,21 @@ Sample Output:
 //My solution:
 
 const sockMerchant = (n, ar) => {
-    let myCount = [];
-    let obj = ar.reduce((colors, amount) => {
-      colors[amount] = ++colors[amount] || 1;
-      return colors;
-    }, {});
-    let count = Object.values(obj);
-    for (let pairs of count) {
-      myCount.push(Math.floor(pairs / 2));
-    }
-    return myCount.reduce((prev, curr) => prev + curr);
-  };
+  let myCount = [];
+
+  let obj = ar.reduce((colors, amount) => {
+    colors[amount] = ++colors[amount] || 1;
+    return colors;
+  }, {});
+
+  let count = Object.values(obj);
+
+  for (let pairs of count) {
+    myCount.push(Math.floor(pairs / 2));
+  }
+
+  return myCount.reduce((prev, curr) => prev + curr);
+};
 
 sockMerchant(20, [4, 5, 5, 5, 6, 6, 4, 1, 4, 4, 3, 6, 6, 3, 6, 1, 4, 5, 5, 5]);
 //returns: 9
