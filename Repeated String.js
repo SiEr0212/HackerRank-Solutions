@@ -40,3 +40,15 @@ a
 Sample Output 1
 1000000000000
 */
+
+function repeatedString(s, n) {
+    let r = n % s.length,
+      m = (n - r) / s.length,
+      count = 0;
+    for (let i = 0; i < s.length; ++i) {
+      if (s[i] === "a") {
+        count += m + (i < r);
+      }
+    }
+    return count;
+  }
