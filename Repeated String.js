@@ -40,7 +40,7 @@ a
 Sample Output 1
 1000000000000
 */
-
+//My solution:
 function repeatedString(s, n) {
     let r = n % s.length,
       m = (n - r) / s.length,
