@@ -1,6 +1,8 @@
 /*
 Repeated String
 
+from HackerRank: https://www.hackerrank.com/challenges/repeated-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup
+
 Lilah has a string, , of lowercase English letters that she repeated infinitely many times.
 
 Given an integer, , find and print the number of letter a's in the first  letters of Lilah's infinite string.
