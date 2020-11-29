@@ -55,6 +55,7 @@ function repeatedString(s, n) {
   }
 
 repeatedString('abcac', 10);
+//returns: 4
 
 
 
